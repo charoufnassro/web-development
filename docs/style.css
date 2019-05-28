@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    display: block;
+    color: blueviolet;
+    font-size: 100px;
+    text-align: center;
+    margin: 25vh auto;
+}
