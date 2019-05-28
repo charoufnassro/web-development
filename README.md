@@ -1,4 +1,4 @@
-# Hello EvryOne
+# Web Development [Image](https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/icons/roles/software-dev@2x.png)
 
 ## Welcome to GitHub Pages
 
