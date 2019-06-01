@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 25vh 25vh 25vh 25vh;
+}
+
+div {
+    text-align: center;
+    color: #fff;
+    font-size: 64px;
+    margin: 10px;
+}
+
+.header {
+    grid-area: 1/1/2/4;
+    background-color: #00ffaa;
+}
+
+.sidebar {
+    grid-area: 2/1/4/2;
+    background-color: #ff8c00;
+}
+
+.content {
+    grid-area: 2/2/4/4;
+    background-color: #7fff00;
+}
+
+.footer {
+    grid-area: 4/1/4/4;
+    background-color: #8a2bb2;
+}
