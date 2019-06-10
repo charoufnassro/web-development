@@ -21,6 +21,15 @@ h1 {
     z-index: 1;
 }
 
+.sub{
+    color: #fff;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 70px;
+    z-index: 1;
+}
+
 ul li {
     position: absolute;
     border: 1px solid #fff;
