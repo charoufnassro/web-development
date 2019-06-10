@@ -1,0 +1,139 @@
+:root{
+    box-sizing: border-box;
+}
+
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #709b90;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body * + * {
+    margin-top: 1.5em;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+.site-nav{
+    display: flex;
+    padding-left: 0;
+    list-style-type: none;
+    background-color: #5f4b44;
+    border-radius: 0.2em;
+}
+
+.site-nav li{
+    margin-top: 0;
+}
+
+.site-nav li a {
+    display: block;
+    background-color: #cc6b5a;
+    color: #fff;
+    text-decoration: none;
+    margin: 0.3em;
+    padding: .5em 1em;
+    border-radius: .2em;
+}
+
+.site-nav > li + li {
+    margin-left: .5em;
+}
+
+.site-nav .nav-right{
+    margin-left: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.tile{
+    padding: 1.5em;
+    background-color: #fff;
+}
+
+.flex > * + * {
+    margin-top: 0;
+    margin-left: 1.5em;
+}
+
+.column-main{
+    flex: 66.67%;
+}
+.column-sidebar{
+   flex: 33.33%;
+   display: flex;
+   flex-direction: column;
+}
+
+.login-form h3 {
+    margin: 0;
+    font-size: .9em;
+    font-weight: bold;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.login-form input:not([type=checkbox]) :not([type=radio]){
+    display: block;
+    width: 100%;
+    margin-top: 0;
+}
+
+input{
+    padding: 5px;
+    margin: .3em 0 0 0;
+    border-radius: .3em;
+    border: #cc6b5a solid 1px;
+}
+
+.login-form button{
+    margin-top: 1em;
+    border: #cc6b5a solid 1px;
+    background-color: #fff;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: .2em;
+}
+
+.centerd{
+    text-align: center;
+}
+
+.cost {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    line-height: .7;
+}
+
+.cost > span {
+    margin-top: 0;
+}
+
+.cost-currency {
+    font-size: 2rem;
+}
+
+.cost-dollars{
+    font-size: 5rem;
+}
+
+.cost-cents{
+    font-size: 1.5rem;
+    align-self: flex-start;
+}
+
+.cta-button {
+    display: block;
+    background-color: #cc6b5a;
+    color: #fff;
+    padding: .5em 1em;
+    text-decoration: none;
+    border-radius: .2em;
+}
