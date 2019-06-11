@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 200vh;
+}
+
+.top-banner{
+    background-color: #850252;
+    color: #fff;
+    padding: 2em;
+    font-size: 1.5em;
+}
+
+.top-banner button{
+    background-color: #fff;
+    padding: .5em 2em;
+    border: #fff 1px solid;
+    border-radius: .2em;
+    color: #850252;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit{
+    float: right;
+}
+
+button, input{
+    background-color: #850252;
+    padding: .5em 2em;
+    border: #850252 1px solid;
+    border-radius: .2em;
+    color: #fff;
+    font-weight: bold;
+    margin: .2em;
+    cursor: pointer;
+}
+
+.email-input{
+    background-color: #8502532d;
+    width: calc(100% - 21.6em);
+}
+
+.modal{
+    display: none;
+
+    
+}
+
+.modal-close{
+    position: absolute;
+    top: 0em;
+    right: .5em;
+    background-color: inherit;
+    font-size: 1.5em;
+    font-weight: normal;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    text-indent: 10em;
+    overflow: hidden;
+}
+
+.modal-body{
+    margin:1em ;
+    padding: 1em;
+    background-color: #aaa;
+    border-radius: .2em;
+    color: #fff;
+    font-weight: bold;
+    position: fixed;
+    top: 3em;
+    right: 10%;
+    left: 10%;
+}
+
+.modal-backdrop{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+footer{
+    position: fixed;
+    padding: .3em .5em;
+    font-size: 2em;
+    background-color: #850252;
+    color: #fff;
+    border-radius: 50%;
+    bottom: .5em;
+    right: .5em; 
+    cursor: pointer;
+    box-shadow: -5px 1px 5px #5c5c5c;
+}
+
+.relative{
+    position: sticky;
+    border: #850252 2px solid;
+    border-radius: .3em;
+    padding: .2em;
+    top: 1em;
+    right: 5em;
+    width: 300px;
+    left: 5em;
+}
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Modal Dialog Box</title>
+</head>
+<body>
+    <header class="top-banner">
+        <div class="top-banner-inner">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                <button id="open">Sign up</button>
+            </p>
+        </div>
+    </header>
+
+    <aside class="relative">
+        <h2>relative</h2>
+    </aside>
+    <div class="modal" id="modal">
+        <div class="modal-backdrop" id="modal-backdrop"></div>
+        <div class="modal-body">
+            <button class="modal-close" id="close">x</button>
+            <h2>Wombat Newsletter</h2>
+            <p>Sign up for our monthly newsletter. No spam. We promise!</p>
+            <form action="POST">
+                <label for="email">Email address : </label>
+                <input type="text" class="email-input" type="email">
+                <input type="submit" class="submit">
+            </form>
+        </div>
+    </div>
+    <footer>
+        +
+    </footer>
+<script type="text/javascript">
+    var open = document.getElementById('open');
+    var close = document.getElementById('close');
+    var modal = document.getElementById('modal');
+    var clickModal = document.getElementById('modal-backdrop');
+    
+    open.addEventListener('click', function(event){
+        event.preventDefault();
+        modal.style.display = 'block';
+    });
+
+    close.addEventListener('click', function(event){
+        event.preventDefault();
+        modal.style.display = 'none';
+    });
+
+    clickModal.addEventListener('click', function(event){
+        event.preventDefault();
+        modal.style.display = 'none';
+    });
+</script>
+</body>
+</html>
