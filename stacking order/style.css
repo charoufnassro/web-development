@@ -1,0 +1,40 @@
+div{
+    padding: 5em;
+    margin: 0em;
+    max-width: 100px;
+    color: #fff;
+    background-color: darkgoldenrod;
+    border: #000 1px solid;
+    position: sticky;
+}
+
+.one{
+    top: 1em;
+    left: 5em;
+    z-index: 2;
+    
+}
+
+.two{
+    top: 5em;
+    left: 15em;
+    z-index: 4;
+}
+
+.three{
+    top: 10em;
+    left: 20em;
+    z-index: 0;
+}
+
+.absolute {
+    color: #000;
+    background-color: #fff;
+    padding: 1em;
+    margin: 0;
+    width: 50px;
+    border-radius: .2em;
+    position: absolute;
+    top: 1em;
+    left: 0;
+}
