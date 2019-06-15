@@ -1,0 +1,210 @@
+:root{
+    box-sizing: border-box;
+    font-size: calc(1vw + 0.6em);
+}
+
+*,*::before,*::after{
+    box-sizing:inherit; 
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link{
+    color: #1476b8;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #1430b8;
+}
+
+a:hover{
+    background-color: #3b3b3b;
+}
+
+a:active{
+    color: #b81414;
+}
+
+.page-header{
+    padding: 0.4em 1em;
+    background-color: #000;
+}
+
+.title > h1 {
+    color: #333;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 0.2em 0;
+}
+
+.slogan{
+    color: #888;
+    font-size: 0.875em;
+    margin: 0;
+}
+
+.hero{
+    padding: 2em 1em;
+    background-image: url(coffee.jpg);
+    background-size: 100%;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0.1em 0.1em 0.3em #000;
+}
+
+main{
+    padding: 1em;
+}
+
+.subtitle{
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+.menu{
+    position: relative;
+}
+
+.menu-toggle{
+    position: absolute;
+    top: -1.2em;
+    right: 0.1em;
+    border: 0;
+    background-color: transparent;
+    font-size: 3em;
+    width: 1em;
+    height: 1em;
+    line-height: 0.4;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.menu-toggle::after{
+    position: absolute;
+    top: 0.2em;
+    left: 0.2em;
+    display: block;
+    content: "\2261";
+    text-indent: 0;
+    color: #fff;
+}
+
+.menu-dropdown{
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0;
+}
+
+.menu.is-open .menu-dropdown{
+    display: block;
+}
+
+.nav-menu{
+    margin: 0;
+    padding-left: 0;
+    border: none;
+    list-style: none;
+    background-color: #000;
+    color: #fff;
+    border-top: #888 0.1em solid;
+    border-bottom: #888 0.1em solid;
+}
+
+.nav-menu > li {
+    border-bottom: #888 .1em solid;
+}
+
+.nav-menu > li > a {
+    display: block;
+    padding: 0.8em 1em;
+    color: #fff;
+    font-weight: normal;
+}
+
+.column{
+    background-color: #fff;
+        box-shadow: .1em .1em .5em #ccc; 
+        padding: 1em;
+        margin: 1em 5em;
+        text-align: center;
+}
+
+
+@media (min-width: 35em) {
+    :root{
+        box-sizing: border-box;
+        font-size: calc(1vw + 0.2em);
+    }
+
+    .page-header {
+        padding: 1em;
+    }
+    .hero{
+        padding: 5em 1em;
+        font-size: 1.2rem;
+    }
+    main{
+        padding: 2em 1em;
+    }
+    .menu{
+        position: sticky;
+        width: 100%;
+        top: 0;
+        box-shadow: 0.1em 0.1em 0.3em #fff;
+    }
+    .menu-toggle{
+        display: none;
+    }
+    .menu-dropdown{
+        display: block;
+        position: static;
+    }
+    .nav-menu{
+        display: flex;
+        border: 0;
+        padding: 0;
+    }
+    .nav-menu > li{
+        flex: 1;
+        border: 0;
+    }
+    .nav-menu > li > a{
+        background-color: rgba(236, 176, 79, 0.5);
+        padding: 0.3em;
+        text-align: center;
+    }
+    .nav-menu > li > a:hover{
+        background-color: #888;
+    }
+    .row{
+        display: flex;
+        margin-left: -.75em;
+        margin-right: -.75em;
+    }
+    .column{
+        flex: 1;
+        margin-left: 0.75em;
+        margin-right: 0.75em;
+        background-color: #fff;
+        box-shadow: .1em .1em .5em #ccc; 
+        padding: 1em;
+        text-align: center;
+
+    }
+}
+
+@media (max-width: 50em) {
+    .title{
+
+    }
+}
+
