@@ -1,0 +1,25 @@
+.logo {
+    width: 200px;
+    height: 164px;
+  }
+  
+  .kiwi {
+    fill: #94d31b;
+  }
+  
+  .kiwi:hover {
+    fill: #ace63c;
+  }
+  
+  .ground {
+    fill: #787f6a;
+  }
+  
+  .ground:hover {
+    filter: url(#pictureFilter);
+    fill: #896d3d;
+  }
+  
+  body {
+    padding: 20px;
+  }
